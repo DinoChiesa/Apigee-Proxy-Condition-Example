@@ -5,7 +5,7 @@ Apigee.
 
 View the [quick screencast walkthrough of this
 example](https://youtu.be/eDKFme9PsaY) on Youtube:
-![image](./img/screenshot-20191205-124458.png)
+[![image](./img/screenshot-20191205-124458.png)](https://youtu.be/eDKFme9PsaY)
 
 ## Motivation
 
