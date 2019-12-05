@@ -3,8 +3,9 @@
 This is a loopback proxy that shows how to use Regular expressions to match paths for inbound requests in
 Apigee.
 
-View the [quick screencst walkthrough of this example](https://youtu.be/eDKFme9PsaY) on Youtube: 
-
+View the [quick screencast walkthrough of this
+example](https://youtu.be/eDKFme9PsaY) on Youtube:
+![image](./img/screenshot-20191205-124458.png)
 
 ## Motivation
 
@@ -101,5 +102,3 @@ To use this example proxy:
    ```
    curl -i https://$ORG-$ENV.apigee.net/condition-1/regex3/foo/ABC123
    ```
-
-
