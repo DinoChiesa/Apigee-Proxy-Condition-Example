@@ -1,7 +1,10 @@
-## condition-1
+# condition-1
 
 This is a loopback proxy that shows how to use Regular expressions to match paths for inbound requests in
 Apigee.
+
+View the [quick screencst walkthrough of this example](https://youtu.be/eDKFme9PsaY) on Youtube: 
+
 
 ## Motivation
 
@@ -50,7 +53,7 @@ looks like this:
 To use this example proxy:
 
 1. deploy to an org + environment.
-   To do so you can use a command-line tool like [importAndDeploy](https://github.com/DinoChiesa/apigee-edge-js/blob/master/examples/importAndDeploy.js) or just 
+   To do so you can use a command-line tool like [importAndDeploy](https://github.com/DinoChiesa/apigee-edge-js/blob/master/examples/importAndDeploy.js) or just
    manually zip up the apiproxy directory and use the Apigee UI to import the zip.
 
 2. invoke with various options:
@@ -88,3 +91,15 @@ To use this example proxy:
    ```
    curl -i https://$ORG-$ENV.apigee.net/condition-1/regex2/foo/bar/bam
    ```
+
+   regex matching with decimal digits only:
+   ```
+   curl -i https://$ORG-$ENV.apigee.net/condition-1/regex3/foo/012873
+   ```
+
+   regex matching with decimal digits only (negative case):
+   ```
+   curl -i https://$ORG-$ENV.apigee.net/condition-1/regex3/foo/ABC123
+   ```
+
+

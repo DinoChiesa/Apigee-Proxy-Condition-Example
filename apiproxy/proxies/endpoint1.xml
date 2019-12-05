@@ -98,6 +98,17 @@
       <Condition>(proxy.pathsuffix ~~ "/regex2/[^/]+/") and (request.verb = "GET")</Condition>
     </Flow>
 
+    <Flow name="case7">
+      <Request>
+      </Request>
+      <Response>
+        <Step>
+          <Name>AM-Response</Name>
+        </Step>
+      </Response>
+      <Condition>(proxy.pathsuffix ~~ "/regex3/[^/]+/[0-9]+") and (request.verb = "GET")</Condition>
+    </Flow>
+
     <Flow name="unknown request">
       <Request>
         <Step>
